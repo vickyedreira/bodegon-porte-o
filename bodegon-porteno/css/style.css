@@ -1,0 +1,113 @@
+body {
+  font-family: 'Playfair Display', serif;
+}
+header {
+  font-family: Arial, sans-serif; /* o la fuente que prefieras para el header */
+}
+
+
+header {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 20px;
+}
+
+header img {
+  height: 60px;
+}
+
+header h1 {
+  flex-grow: 1;
+  font-size: 24px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+nav a.activo {
+  color: #ffcc00;
+  border-bottom: 2px solid #ffcc00;
+}
+
+
+main {
+  padding: 40px;
+}
+
+main h2 {
+  margin-bottom: 30px;
+}
+
+.plato {
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center;     /* alinea verticalmente */
+  gap: 60px;               /* espacio entre texto e imagen */
+  margin-bottom: 60px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left; /* Forzar el texto alineado a la izquierda */
+}
+
+
+
+.plato img {
+  width: 240px;
+  height: 160px;       /* Igual para todas las imágenes */
+  object-fit: cover;   /* Corta y centra la imagen sin deformarla */
+  border-radius: 10px;
+}
+.plato h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.plato p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.bienvenida {
+  background: url('../img/fondo-bar.jpg') no-repeat center center;
+  background-size: cover;
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bienvenida p {
+  color: white;
+  font-size: 42px; /* aún más grande */
+  max-width: 1000px;
+  text-align: center;
+  background-color: transparent;
+  padding: 0;
+  margin: 0 auto;
+}
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-izq, .footer-der {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.pagina-interna {
+  background-color: #f4f2f2;
+}
